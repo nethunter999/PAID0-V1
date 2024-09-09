@@ -68,7 +68,7 @@ def sm():
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {Anderson}; {model} Build/LRX22C) '
           f'[FBAN/{FBAN};FBAV/{cho}.0.0.15.89;FBPN/{platform};FBLC/sv_SE;FBBV/{vir};'
           f'FBCR/S COMVIQ;FBMF/samsung;FBBD/samsung;FBDV/{model};FBSV/5.0.1;FBCA/armeabi-v7a:armeabi;'
-          f'FBDM{{density={str(random.choice(range(1, 4)))}.0,width={str(random.choice(range(720, 1500)))}'
+          f'FBDM{{density={str(random.choice(range(1,554)))}.0,width={str(random.choice(range(720, 1500)))}'
           f',height={str(random.choice(range(1500, 2000)))};FB_FW/1;]')
     return ua
     
@@ -80,7 +80,7 @@ def ug1():
     rdp2 = str(random.choice(range(111111111, 333333333)))
     andv = str(random.choice(range(8, 12)))
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {andv}.0.0; moto e5 plus Build/OPPS27.91-179-8-16) '
-          f'[FBAN/FB4A;FBAV/{fb_v1}.0.0.50.{fb_v2};FBPN/com.facebook.katana;FBLC/es_MX;FBBV/{rdp1};'
+          f'[FBAN/FB4A;FBAV/{fb_v1}.0.10.50.{fb_v2};FBPN/com.facebook.katana;FBLC/es_MX;FBBV/{rdp1};'
           f'FBCR/null;FBMF/motorola;FBBD/motorola;FBDV/moto e5 plus;FBSV/{andv}.0.0;FBCA/armeabi-v7a:armeabi;'
           f'FBDM{{density=1.7,width=720,height=1358}};FB_FW/1;FBRV/0;]')
     return ua
@@ -92,7 +92,7 @@ def ug2():
     rdp2 = str(random.choice(range(111111111, 433333333)))
     andv = str(random.choice(range(8, 12)))
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {andv}.1.1; vivo V3Max Build/LMY47V) '
-          f'[FBAN/Orca-Android;FBAV/{fb_v1}.0.0.16.{fb_v2};FBPN/com.facebook.orca;FBLC/en_US;FBBV/{rdp1};'
+          f'[FBAN/Orca-Android;FBAV/{fb_v1}.0.5.16.{fb_v2};FBPN/com.facebook.orca;FBLC/en_US;FBBV/{rdp1};'
           f'FBCR/null;FBMF/vivo;FBBD/vivo;FBDV/vivo V3Max;FBSV/{andv}.1.1;FBCA/armeabi-v7a:armeabi;'
           f'FBDM{{density=3.0,width=1080,height=1920}}')
     return
