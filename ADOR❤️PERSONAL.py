@@ -49,7 +49,14 @@ appx_data = appx_buffer.getvalue().decode("utf-8").splitlines()
 raw = "".join(appx_data)
 
 #----------------------------[USER/AGENT]-----------------------------------#
-def sm():
+def ua():
+    rr = random.randint
+    aZ = random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+    rx = random.randrange(1, 999)
+    xx = (f'''Mozilla/5.0 (Windows NT 10.0; {str(rr(9, 11))}; Win64; x64){aZ}{rx}{aZ}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99, 149))}.0.{str(rr(4500, 4999))}.{str(rr(35, 99))} Chrome/{str(rr(99, 175))}.0.{str(rr(0, 5))}.{str(rr(0, 5))} Safari/537.36''')
+    return xx
+
+def Samsung():
     Anderson = random.choice([
         '10', '13', '7.0.0', '7.1.1', '9', '12', '11', '9.0', '8.0.0', 
         '7.1.2', '7.0', '4', '5', '4.4.2', '5.1.1', '6.0.1', '9.0.1'])
@@ -68,34 +75,34 @@ def sm():
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {Anderson}; {model} Build/LRX22C) '
           f'[FBAN/{FBAN};FBAV/{cho}.0.0.15.89;FBPN/{platform};FBLC/sv_SE;FBBV/{vir};'
           f'FBCR/S COMVIQ;FBMF/samsung;FBBD/samsung;FBDV/{model};FBSV/5.0.1;FBCA/armeabi-v7a:armeabi;'
-          f'FBDM{{density={str(random.choice(range(1,554)))}.0,width={str(random.choice(range(720, 1500)))}'
+          f'FBDM{{density={str(random.choice(range(1, 4)))}.0,width={str(random.choice(range(720, 1500)))}'
           f',height={str(random.choice(range(1500, 2000)))};FB_FW/1;]')
     return ua
-    
 
-def ug1():
+def userag1():
     fb_v1 = str(random.choice(range(111, 555)))
     fb_v2 = str(random.choice(range(111, 555)))
     rdp1 = str(random.choice(range(111111111, 333333333)))
     rdp2 = str(random.choice(range(111111111, 333333333)))
     andv = str(random.choice(range(8, 12)))
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {andv}.0.0; moto e5 plus Build/OPPS27.91-179-8-16) '
-          f'[FBAN/FB4A;FBAV/{fb_v1}.0.10.50.{fb_v2};FBPN/com.facebook.katana;FBLC/es_MX;FBBV/{rdp1};'
+          f'[FBAN/FB4A;FBAV/{fb_v1}.0.0.50.{fb_v2};FBPN/com.facebook.katana;FBLC/es_MX;FBBV/{rdp1};'
           f'FBCR/null;FBMF/motorola;FBBD/motorola;FBDV/moto e5 plus;FBSV/{andv}.0.0;FBCA/armeabi-v7a:armeabi;'
           f'FBDM{{density=1.7,width=720,height=1358}};FB_FW/1;FBRV/0;]')
     return ua
 
-def ug2():
+def userag2():
     fb_v1 = str(random.choice(range(111, 555)))
     fb_v2 = str(random.choice(range(111, 555)))
     rdp1 = str(random.choice(range(111111111, 433333333)))
     rdp2 = str(random.choice(range(111111111, 433333333)))
     andv = str(random.choice(range(8, 12)))
     ua = (f'Dalvik/2.1.0 (Linux; U; Android {andv}.1.1; vivo V3Max Build/LMY47V) '
-          f'[FBAN/Orca-Android;FBAV/{fb_v1}.0.5.16.{fb_v2};FBPN/com.facebook.orca;FBLC/en_US;FBBV/{rdp1};'
+          f'[FBAN/Orca-Android;FBAV/{fb_v1}.0.0.16.{fb_v2};FBPN/com.facebook.orca;FBLC/en_US;FBBV/{rdp1};'
           f'FBCR/null;FBMF/vivo;FBBD/vivo;FBDV/vivo V3Max;FBSV/{andv}.1.1;FBCA/armeabi-v7a:armeabi;'
           f'FBDM{{density=3.0,width=1080,height=1920}}')
     return
+   
 #----------------------------[LOGO]-----------------------------------#
 logo = f"""{g}
   A)aa   D)dddd    O)oooo  R)rrrrr 
